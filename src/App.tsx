@@ -8,6 +8,7 @@ import UseState from "./Components/UseState";
 import UseContextComponent from "./Components/UseContextComponent";
 import UseReducer from "./Components/UseReducer";
 import TodosWrapper from "./Components/Todos";
+import TodoWrapper from "./Components/Redux/TodoRedux";
 
 interface AppContextInterface {
   name?: string;
@@ -97,6 +98,9 @@ const App: FC = () => {
           </Route>
           <Route path="/todos">
             <TodosWrapper />
+          </Route>
+          <Route path="/redux">
+            <TodoWrapper />
           </Route>
         </Switch>
       </BrowserRouter>
